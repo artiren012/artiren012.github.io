@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Example Content"
-author: "Inela"
+author: ""
 tags: ["jekyll", "docs", "example", "content"]
 ---
 
