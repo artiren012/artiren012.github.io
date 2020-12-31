@@ -7,8 +7,15 @@ layout: default
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h3 class="catalogue-title">{{ post.title }}</h3>
-        <div class="catalogue-line">{{ post.tags }}</div>
+        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <div class="catalogue-line"></div>
+        <p>
+          {% if post.tags %}
+            {% for tag in post.tags %}
+              <a href="/tags/#{{ tag }}">{{ tag }}</a>, 
+            {% endfor %}
+          {% endif %}
+        </p>
 
         <p>
           {{ post.content | strip_html | truncatewords: 65 }}
