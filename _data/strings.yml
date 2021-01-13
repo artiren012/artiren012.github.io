@@ -10,59 +10,59 @@
 
 # Free version
 # ---------------------------------------------------------------------------------------
-home:                  Home
-pages:                 Pages
-posts:                 Posts
-about:                 About
+home:                  메인
+pages:                 페이지
+posts:                 포스트
+about:                 정보
 related_posts:         Related Posts
-other_projects:        Other Projects
-comments:              Comments
+other_projects:        프로젝트
+comments:              댓글
 jump_to:               Jump to
-navigation:            Navigation
-social:                Social
-links:                 Links
-pagination:            Pagination
-newer:                 Newer
-older:                 Older
-forward:               Forward
-back:                  Back
+navigation:            네비게이션
+social:                소셜
+links:                 링크
+pagination:            페이지 이동
+newer:                 최신
+older:                 오래됨
+forward:               다음
+back:                  이전
 permalink:             Permalink
 permalink_icon:        content-hash
 templates:             Templates (for web app)
 present:               present
-toc:                   Table of Contents
-note:                  Note
-description:           Description
-search:                Search
-search_placeholder:    Type something…
+toc:                   목차
+note:                  노트
+description:           설명
+search:                검색
+search_placeholder:    검색할 단어를 입력해주세요...
 
-loading:               Loading…
-redirecting:           Redirecting…
+loading:               로딩중...
+redirecting:           이동중...
 
 continue_reading:      >
-  Continue reading <!--post_title-->
+  <!--post_title--> 더보기
 
 cookies_banner:
   text:                >
-    This site uses cookies. [Cookies Policy](/cookies-policy/).
-  okay:                Okay
+    이 사이트는 쿠키를 사용합니다. [Cookies Policy](/cookies-policy/).
+  okay:                확인
 
 not_found:
-  title:               '404: Page Not Found'
+  title:               '페이지를 찾을 수 없어요.'
   message:             |
     Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
     <!--home_link--> to try finding it again.
-  home_link:           Head back home
+  home_link:           메인으로 돌아가기
 
 offline:
   title:               'You are Offline'
   message:             |
     Sorry, but you appear to be offline and this page has not been prepared for offline viewing.
     <!--home_link--> to try finding another page.
-  home_link:           Head back home
+  home_link:           메인으로 돌아가기
 
 error:
-  title:               Error
+  title:               에러가 발생했어요!
   message:             |
     Sorry, an error occurred while loading <!--link-->.
 
@@ -113,14 +113,14 @@ welcome:
   more_posts:          See <!--posts_title--> for more
 
 resume:
-  location:            Location
+  location:            위치
   location_separator:  ', '
-  email:               Email
+  email:               이메일
   phone:               Phone
-  website:             Website
+  website:             웹사이트
   work:                Experience
   work_title:          <!--position--> at <!--company-->
-  highlights:          Highlights
+  highlights:          하이라이트
   volunteer:           Volunteer
   volunteer_title:     <!--position--> at <!--organization-->
   education:           Education
@@ -131,13 +131,13 @@ resume:
   publications:        Publications
   publications_title:  <!--name--> by <!--publisher-->
   references:          References
-  languages:           Languages
+  languages:           언어
   fluency:             Fluency
-  skills:              Skills
-  level:               Level
+  skills:              스킬
+  level:               레벨
   interests:           Interests
   summary:             Summary
-  keywords:            Keywords
+  keywords:            키워드
   print:               Print
   download_pdf:        PDF
   download_vcf:        vCard
