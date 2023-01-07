@@ -4,7 +4,8 @@ if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
     document.body.dataset.theme = 'light-mode'
 }
 
-function toggleDarkMode() {
+const darkmodeBtn = document.querySelector('.darkmode-toggle');
+darkmodeBtn.addEventListener('click', () => {
     let dataAttr = document.body.dataset;
     dataAttr.theme.match('light-mode') ? dataAttr.theme = 'dark-mode' : dataAttr.theme = 'light-mode';
-}
+});
