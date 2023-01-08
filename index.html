@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ar</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        @import url('./assets/style.css');
+        .h1 {
+            margin-top: 28vh;
+        }
+    </style>
     <script src="https://kit.fontawesome.com/067f3db4d7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -13,12 +18,16 @@
     <main>
         <p class="h1">Ar</p>
         <a class="h2" href="https://github.com/artiren012"><i class="fa-brands fa-github"></i></a>
-        <a class="h2 m" href="https://youtube.com/@artiren012"><i class="fa-brands fa-youtube"></i></a>
-        <a class="h2 m" href="https://twitter.com/@ar012"><i class="fa-brands fa-twitter"></i></a>
-        <p class="link">used <a class="link" href="https://fontawesome.com">Font Awesome</a> / 
-            <a class="link" href="https://campaign.naver.com/nanumsquare_neo/#introduce">Nanum Square Neo</a>
+        <a class="h2 item" href="https://youtube.com/@artiren012"><i class="fa-brands fa-youtube"></i></a>
+        <a class="h2 item" href="https://twitter.com/@ar012"><i class="fa-brands fa-twitter"></i></a>
+        <p>used <a href="https://fontawesome.com">Font Awesome</a> /
+            <a href="https://campaign.naver.com/nanumsquare_neo/#introduce">Nanum Square Neo</a>
         </p>
-        <button class="darkmode-toggle">Toggle theme</button>
+        <details>
+            <summary><i class="fa-solid fa-bars"></i></summary>
+            <p><a onclick="loadPage('/about');" style="cursor: pointer;">About</a></p>
+            <p><button class="darkmode-toggle" onclick="toggleDarkMode()">Toggle theme</button></p>
+        </details>
     </main>
     <script type="text/javascript" src="./assets/main.js"></script>
 </body>
