@@ -26,6 +26,7 @@ if (isDark) {
 function toggleDarkMode() {
     let dataAttr = document.body.dataset;
     dataAttr.theme.match('light-mode') ? dataAttr.theme = 'dark-mode' : dataAttr.theme = 'light-mode';
+    isDark = !isDark;
 }
 
 function loadPage(link) {
