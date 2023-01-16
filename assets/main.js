@@ -10,3 +10,13 @@ function toggleDarkMode() {
     dataAttr.theme.match('light-mode') ? dataAttr.theme = 'dark-mode' : dataAttr.theme = 'light-mode';
     isDark = !isDark;
 }
+
+function openDialog(id) {
+    const dialog = document.getElementById(id);
+	dialog.showModal();
+}
+
+function closeDialog(id) {
+    const dialog = document.getElementById(id);
+	dialog.close();
+}

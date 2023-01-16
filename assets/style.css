@@ -66,3 +66,9 @@ details summary::-webkit-details-marker {
 summary {
     cursor: pointer;
 }
+
+dialog {
+    border: none;
+    border-radius: 15px;
+    outline: 0;
+}
