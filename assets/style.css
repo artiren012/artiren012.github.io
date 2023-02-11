@@ -8,11 +8,13 @@
 body[data-theme='light-mode'] {
     --text: rgb(0, 0, 0);
     --background: rgb(255, 255, 255);
+    --dialog: rgb(255, 255, 255);
 }
 
 body[data-theme='dark-mode'] {
     --text: rgb(255, 255, 255);
     --background: rgb(15, 15, 15);
+    --dialog: rgb(63, 63, 63);
 }
 
 body {
@@ -70,5 +72,8 @@ summary {
 dialog {
     border: none;
     border-radius: 15px;
+    padding-left: 2vw;
+    padding-right: 2vw;
     outline: 0;
+    background-color: var(--dialog);
 }

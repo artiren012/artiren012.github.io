@@ -12,12 +12,13 @@
 <body>
     <header>
         <p class="h2">White</p>
-        <details>
-            <summary class="h3"><i class="fa-solid fa-bars"></i></summary>
-            <p><a href="/">Main</a></p>
+        <a class="h3" onclick="openDialog('dialog')" href="#"><i class="fa-solid fa-bars"></i></a>
+        <dialog id="dialog">
+            <p><a href="/about">About</a></p>
             <p><a href="/projects/">Projects</a></p>
             <p><button class="darkmode-toggle" onclick="toggleDarkMode()">Toggle theme</button></p>
-        </details>
+            <p><a href="#" onclick="closeDialog('dialog')">Close</a></p>
+        </dialog>
     </header>
     <main>
         <section>
