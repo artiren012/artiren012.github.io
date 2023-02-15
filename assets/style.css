@@ -76,4 +76,5 @@ dialog {
     padding-right: 2vw;
     outline: 0;
     background-color: var(--dialog);
+    font-size: 2vh;
 }
