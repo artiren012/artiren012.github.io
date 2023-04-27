@@ -9,22 +9,17 @@
 body {
     margin: 0;
     font-family: 'CookieRun-Regular';
+    text-align: center;
 }
 
 header {
-    text-align: center;
     padding: 10px;
     border-bottom: 2px solid black;
 }
 
 nav {
-    width: 20%;
-    position: fixed;
-    display: inline-block;
     padding: 0 10px 0 10px;
     margin: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
 }
 
 ul {
