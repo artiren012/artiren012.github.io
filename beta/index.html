@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>아르</title>
+        <script src="https://kit.fontawesome.com/067f3db4d7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/common.css">
+        <style>
+            a#controller {
+                padding: 10px;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.25);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>아르</h1>
+        </header>
+        <section>
+            <article id="introduction">
+                <h2>소개</h2>
+                <p>공부하고 게임 만들고... 그렇습니다</p>
+            </article>
+            <article id="portfoilo">
+                <h2>참여한 프로젝트</h2>
+                <article id="white">
+                    <h3><a href="projects/white.html">White</a></h3>
+                    <img id="img-white" height="100" src="assets/img/white.png">
+                    <p>
+                        White는 단순한 탄막피하기 게임입니다.
+                        <span>기획/개발 등</span>
+                    </p>
+                </article>
+            </article>
+        </section>
+        <a id="controller" onclick="controlAudio(this)"><i class="fa-solid fa-pause"></i></a>
+        <audio id="bgm" src="https://mag.kro.kr/assets/audio/BlueArchiveOST159.mp3" loop></audio>
+        <script>
+            const controller = document.getElementById('controller');
+            const bgm = document.getElementById('bgm');
+            let isPlaying = true;
+
+            bgm.src = 'https://mag.kro.kr/assets/audio/BlueArchiveOST159.mp3';
+            bgm.play();
+
+            function controlAudio() {
+                if (isPlaying) {
+                    controller.innerHTML = `<i class="fa-solid fa-play"></i>`;
+                    bgm.pause();
+                } else {
+                    controller.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+                    bgm.play();
+                }
+                isPlaying = !isPlaying;
+            }
+        </script>
+    </body>
+</html>
