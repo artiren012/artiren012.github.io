@@ -19,10 +19,14 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+section {
+    padding: 20px;
+}
+
 article {
     display: inline-block;
     vertical-align: top;
-    margin: 20px 0 20px 0;
+    margin-bottom: 20px;
     padding: 10px 20px 20px 20px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.25);
@@ -31,6 +35,7 @@ article {
 
 a {
     text-decoration: none;
+    color: white;
 }
 a:visited {
     color: white;
@@ -49,8 +54,5 @@ img {
     transition: transform 0.5s;
 }
 img:hover {
-    transform: scale(1.2);
-}
-img:focus {
     transform: scale(1.2);
 }
