@@ -24,13 +24,17 @@ section {
 }
 
 article {
-    display: inline-block;
     vertical-align: top;
     margin-bottom: 20px;
     padding: 10px 20px 20px 20px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+article > article {
+    width: fit-content;
+    display: inline-block;
 }
 
 a {
