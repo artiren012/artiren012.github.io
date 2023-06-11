@@ -14,6 +14,7 @@
         <section>
             <article id="introduction">
                 <h2>소개</h2>
+                <img id="img-white" height="100" src="../assets/img/white.png">
                 <p><a href="https://youtu.be/s-94AGrZcZk"><i class="fa-brands fa-youtube"></i> 프리뷰 영상</a></p>
                 <p>White는 단순한 조작의 탄막 피하기 게임입니다. 화면의 좌/우를 눌러 플레이어를 좌/우로 움직일 수 있고, 각종 장애물 패턴들을 피해 최대한 많은 점수를 획득해보세요!</p>
             </article>
@@ -24,7 +25,8 @@
             <article id="update">
                 <h2>최근 업데이트</h2>
                 <article id="update-1-1">
-                    <h3>version 1.1</h3>
+                    <h3>5월 업데이트</h3>
+                    <span>2023년 5월 1일 업데이트 (version 1.1)</span>
                     <p><a href="https://youtu.be/YqZ9BuZayXI"><i class="fa-brands fa-youtube"></i> 프리뷰 영상</a></p>
                     <ol style="text-align: left;">
                         <li>UI
@@ -50,5 +52,16 @@
                 </article>
             </article>
         </section>
+        <script>
+            let img = document.getElementById("img-white");
+            const images = ['../assets/img/white.png', 'https://play-lh.googleusercontent.com/IVILy4C3rt1rCuz4BZRItg7McBYZ_6N-7GU0Poq8zzZOUsCWSR8h0Z66VArEqTdXNoU=w5120-h2880', 'https://play-lh.googleusercontent.com/_KBZxVCrxkkvx1Ao9MVH3nCRvruvT__1qfaf6kRgtRzAHIzR7M_dfBXjlTFS7Pv0iQ=w5120-h2880', 'https://play-lh.googleusercontent.com/fymNB8EmjNnLAM_Sa8hyTUHxIB_Kv_dq8OwRlMVdS4ofS_0ATPK_pO8MtW7XVEaFulU=w5120-h2880', 'https://play-lh.googleusercontent.com/NdiBoJulMJKgtS1Cjp9J4P9DLZjIi-bufUvx_ll-COSZCV4kZ7JAtnX4wm1ezJBevF0=w5120-h2880'];
+            img.src = images[randInt(0, 4)];
+
+            function randInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min; //최댓값도 포함, 최솟값도 포함
+            }
+        </script>
     </body>
 </html>
