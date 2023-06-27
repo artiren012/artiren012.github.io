@@ -4,60 +4,69 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('anim.css');
 
 body {
     margin: 0;
     font-family: 'CookieRun-Regular';
     text-align: center;
+    background-color: rgb(63, 63, 63);
+    color: white;
 }
 
 header {
     padding: 10px;
-    border-bottom: 2px solid black;
-}
-
-nav {
-    padding: 0 10px 0 10px;
-    margin: 10px;
-}
-
-div.nav-space {
-    width: 20%;
-    margin: 20px;
-    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 section {
-    width: 70%;
+    padding: 20px;
+}
+
+article {
+    vertical-align: top;
+    margin-bottom: 20px;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+article.inline {
     display: inline-block;
-    padding: 0 10px 0 10px;
+}
+
+article > article {
+    width: fit-content;
+    display: inline-block;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 a {
     transition: color 0.2s;
-    color: black;
     text-decoration: none;
+    color: white;
 }
-
 a:visited {
-    color: black;
+    color: white;
 }
-
 a:hover {
-    color: darkgray;
-}
-
-p {
-    text-indent: 1em;
+    color: gray;
 }
 
 span {
     display: block;
-    font-size: 90%;
+    font-size: small;
     color: darkgray;
 }
 
-footer {
-    border-top: 2px solid black;
+img {
+    transition: transform 0.5s;
+}
+img:hover {
+    transform: scale(1.2);
 }

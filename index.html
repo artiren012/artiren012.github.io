@@ -3,35 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ar</title>
+        <title>아르</title>
         <script src="https://kit.fontawesome.com/067f3db4d7.js" crossorigin="anonymous"></script>
-        <style>
-            @import url('./assets/css/common.css');
-            a#github:hover {
-                color: purple;
-            }
-            a#youtube:hover {
-                color: red;
-            }
-            a#twitter:hover {
-                color: skyblue;
-            }
-            /* img#img-white {
-                transition: transform 0.5s;
-            }
-            img#img-white:hover {
-                transform: scale(1.5);
-            } */
-        </style>
+        <link rel="stylesheet" href="assets/css/common.css">
     </head>
     <body>
         <header>
-            <h1>아르</h1>
-            <h2>
-                <a id="github" href="https://github.com/artiren012"><i class="fa-brands fa-github"></i></a>
-                <a id="youtube" href="https://youtube.com/@artiren012"><i class="fa-brands fa-youtube"></i></a>
-                <a id="twitter" href="https://twitter.com/@artiren012"><i class="fa-brands fa-twitter"></i></a>
-            </h2>
+            <h1><a href="index.html">아르</a></h1>
         </header>
         <section>
             <article id="introduction">
@@ -40,30 +18,23 @@
             </article>
             <article id="portfoilo">
                 <h2>참여한 프로젝트</h2>
-                <div id="white">
+                <article class="inline" id="white">
                     <h3><a href="projects/white.html">White</a></h3>
                     <img id="img-white" height="100" src="assets/img/white.png">
                     <p>
                         White는 단순한 탄막피하기 게임입니다.
-                        <span>기획/개발 등</span>
+                        <p><span>기획/개발 등</span></p>
+                        <a href="projects/white.html">더보기 ></a>
                     </p>
-                </div>
-            </article>
-            <article id="contact">
-                <h2>연락처</h2>
-                <p>
-                    <h3>이메일</h3>
-                    <a href="mailto:artiren012@gmail.com">artiren012@gmail.com</a>
-                </p>
+                </article>
             </article>
         </section>
         <footer>
-            <p>
-                Copyright by Ar 2023.
-            </p>
-            <p>used <a href="https://fontawesome.com">Font Awesome</a> /
-                <a href="https://cookierunfont.com">CookieRun Font</a>
-            </p>
+            <p>SNS | 
+            <a href="https://youtube.com/@artiren012"><i class="fa-brands fa-youtube"></i> Youtube</a> | 
+            <a href="https://twitter.com/@artiren012"><i class="fa-brands fa-twitter"></i> Twitter</a> | 
+            <a href="https://github.com/artiren012"><i class="fa-brands fa-github"></i> Github</a></p>
+            <p>2023 Ar.</p>
         </footer>
     </body>
 </html>
