@@ -3,45 +3,58 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>아르</title>
+        <title>Ar</title>
+        <meta name="description" content="main page">
         <script src="https://kit.fontawesome.com/067f3db4d7.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="assets/css/common.css">
-        <script type="text/javascript" src="assets/js/toggleTheme.js"></script>
+        <link rel="stylesheet" href="assets/css/index.css">
+        <script type="text/javascript" src="assets/js/easterEgg.js"></script>
     </head>
     <body>
         <header>
-            <h1>아르</h1>
-            <p>
-                <a href="index.html">메인</a> | 
-                <a href="projects/index.html">프로젝트</a> | 
-                <a style="cursor: pointer;" onclick="toggleDarkMode()">테마 변경</a>
-            </p>
+            <img id="pfp" src="https://avatars.githubusercontent.com/u/39212405">
+            <h1>Ar</h1>
+            <span>@artiren012</span>
+            <p id="desc">A Korean student developing various things such as web pages, applications, and games.</p>
+            <a href="./ko-kr/index.html">한국어로 보기</a>
         </header>
-        <section>
-            <article id="introduction">
-                <h2>소개</h2>
-                <p>공부하고 게임 만들고... 그렇습니다</p>
-            </article>
-            <article id="portfoilo">
-                <h2><a href="projects/index.html">프로젝트</a></h2>
-                <article class="inline" id="white">
-                    <h3><a href="projects/white.html">White</a></h3>
-                    <img id="img-white" height="100" src="assets/img/white.png">
-                    <p>
-                        White는 단순한 탄막피하기 게임입니다.
-                        <p><span>기획 및 개발 (1인 개발)</span></p>
-                        <a href="projects/white.html">더보기 ></a>
-                    </p>
+        <main>
+            <section id="works">
+                <h2>Works</h2>
+                <p>This is a project that I personally developed or participated in.</p>
+                <article id="white">
+                    <h3>White</h3>
+                    <span>Developed by Ar</span>
+                    <div class="tags">
+                        <div class="tag tag-game">#Game</div>
+                        <div class="tag tag-android">#Android</div>
+                        <div class="tag tag-cpp">#C++</div>
+                    </div>
+                    <p>White is a simple dodge game. Press left/right on the screen to move the player left/right, and avoid various obstacle patterns.</p>
+                    <span>Only available in Korea</span>
                 </article>
-            </article>
-        </section>
+                <article id="diary">
+                    <h3>Diary</h3>
+                    <span>In-Progress | Developed by Ar</span>
+                    <div class="tags">
+                        <div class="tag tag-app">#Application</div>
+                        <div class="tag tag-android">#Android</div>
+                        <div class="tag tag-java">#Java</div>
+                    </div>
+                    <p>This is a simple diary where you can write down your daily diary.</p>
+                    <span>Scheduled to be released in 2024</span>
+                </article>
+                </article>
+            </section>
+            <section id="social">
+                <h2>Social</h2>
+                <div class="tag" onclick="window.open('https:\/\/youtube.com\/@artiren012', '_black')"><i class="fa-brands fa-youtube"></i> Youtube (KR)</div>
+                <div class="tag" onclick="window.open('https:\/\/twitter.com\/@artiren012', '_black')"><i class="fa-brands fa-x-twitter"></i> Twitter</div>
+                <div class="tag" onclick="window.open('https:\/\/github.com\/artiren012', '_black')"><i class="fa-brands fa-github"></i> Github</div>
+            </section>
+        </main>
         <footer>
-            <p>SNS | 
-            <a href="https://youtube.com/@artiren012"><i class="fa-brands fa-youtube"></i> Youtube</a> | 
-            <a href="https://twitter.com/@artiren012"><i class="fa-brands fa-twitter"></i> Twitter</a> | 
-            <a href="https://github.com/artiren012"><i class="fa-brands fa-github"></i> Github</a> | 
-            <a href="https://linktr.ee/artiren012"><i class="fa-solid fa-link"></i> Linktree</a></p>
-            <p>2024 @artiren012</p>
+            Made by @artiren012<br>
+            Gaming RGB MAKI appears with a 10% chance.
         </footer>
     </body>
 </html>

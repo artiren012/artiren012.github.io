@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'GyeonggiTitleM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'GyeonggiTitleM';
+}
+
+body {
+    background-color: cornflowerblue;
+    margin: 0;
+}
+
+header {
+    color: white;
+    padding: 32px;
+}
+
+main {
+    background-color: white;
+    margin: 0 16px 16px 16px;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+footer {
+    color: white;
+    margin: 16px;
+}
+
+article {
+    background-color: cornflowerblue;
+    color: white;
+    margin: 8px 0;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+div.tags {
+    margin: 8px 0;
+}
+.tag {
+    width: fit-content;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: darkgray;
+    border-radius: 8px;
+    font-size: small;
+    transition: background-color 0.2s;
+}
+.tag:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+.tag:active {
+    background-color: black;
+}
+
+img#pfp {
+    display: block;
+    object-fit: cover;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+h1 {
+    display: inline;
+    margin-right: 16px;
+}
+
+h3 {
+    display: inline;
+    margin-right: 8px;
+}
+
+span {
+    color: lightgray;
+}
+
+a {
+    transition: color 0.2s;
+    text-decoration: none;
+    color: blue;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: darkviolet;
+}
+a:active {
+    color: darkblue;
+}
+
+#social > div {
+    font-size: medium;
+}
