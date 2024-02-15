@@ -59,6 +59,9 @@ div.tags {
 .tag:active {
     background-color: black;
 }
+section#social > .tag {
+    margin-bottom: 8px;
+}
 
 img#pfp {
     display: block;
