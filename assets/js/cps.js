@@ -5,9 +5,7 @@ let isPlaying = false;
 
 function hikariClick(element) {
     element.classList.add('touched');
-    setTimeout(() => {
-        element.classList.remove('touched');
-    }, 200);
+    element.classList.remove('touched');
     
     if (!isPlaying) return;
     count++;
