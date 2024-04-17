@@ -26,5 +26,7 @@ function startClick(element) {
     } else {
         element.innerHTML = "시작하기";
         clearInterval(interval);
+        time = 0;
+        count = 0;
     }
 }
