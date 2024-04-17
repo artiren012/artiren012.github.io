@@ -104,3 +104,17 @@ a:active {
 #social > div {
     font-size: medium;
 }
+
+#hikari {
+    margin: 8vh;
+    height: 40vh;
+}
+#hikari.touched {
+    animation: hikari_move 0.2s;
+}
+
+@keyframes hikari_move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
