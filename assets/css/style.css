@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'LINESeedKR';
+    src: url('../font/LINESeedKR-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'LINESeedKR', Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+@keyframes fade-in {
+    0% { top: 60%; opacity: 0; }
+    100% { top: 50%; opacity: 1; }
+}
+
+main {
+    width: 80vw;
+    height: auto;
+    animation: fade-in 1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}
+
+header {
+    margin-bottom: 3vh;
+    overflow-y: scroll;
+}
+section {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+section a {
+    font-size: 3vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+@keyframes dialog {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes dialog-backdrop {
+    0% { opacity: 0; }
+    100% { opacity: 0.8; }
+}
+
+dialog {
+    width: 80vw;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 16px;
+    transition: opacity 0.5s;
+}
+dialog[open] {
+    animation: dialog 0.5s;
+}
+dialog[open]::backdrop {
+    animation: dialog-backdrop 0.5s;
+}
+dialog.close {
+    opacity: 0;
+}
+dialog.close::backdrop {
+    opacity: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 10vw;
+}
+
+a {
+    transition: color 0.2s;
+    color: grey;
+}
+a:hover {
+    color: lightgrey;
+}
+a:visited {
+    color: grey;
+}
+
+span {
+    color: lightgrey;
+}
+span.desc {
+    color: grey;
+}
+
+button {
+    font-size: 2vh;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px;
+}
